@@ -16,6 +16,15 @@ nav {
   justify-content: space-between;
 }
 
+footer {
+  width: 100%;
+  height: 85px;
+  background-color: #2e2d29;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   height: inherit;
   width: auto;
@@ -37,7 +46,8 @@ nav {
 }
 
 .logo img {
-  width: 135px;
+  height: 100%;
+  width: 125px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -46,16 +56,20 @@ nav {
 
   background-image: -webkit-linear-gradient(
       bottom,
-      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0)
     ),
-    url(img/Rectangle6.png);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(img/Rectangle6.png);
+    url(../img/background-index.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../img/background-index.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: local;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -68,16 +82,55 @@ nav {
   color: #fff;
 }
 
-.test {
+.book-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: 70px;
+  width: 200px;
+  height: 50px;
   color: #fff;
   background: #2e2d29;
   font-size: xx-large;
   border-radius: 20px;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h2 {
+  color: #4e5c38;
+  font-size: xx-large;
+}
+
+.content span {
+  color: #fff;
+}
+
+.comments {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.book-adventure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100px;
+  color: #fff;
+  background: #2e2d29;
+  font-size: xx-large;
+  border-radius: 13px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10%;
 }
