@@ -76,3 +76,137 @@ nav {
   text-decoration: none;
   color: white;
 }
+.search-bar-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 70px;
+  background-color: #2e2d29;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.search-bar input {
+  background-color: #f2f2f0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  appearance: textfield;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 160px;
+  height: 45px;
+}
+.search-bar button {
+  margin-left: 20px;
+  background: #4e5c38;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 160px;
+  height: 45px;
+  border: none;
+  outline: none;
+  font-size: larger;
+  cursor: pointer;
+  color: white;
+}
+.booked-flights-container {
+  gap: 20px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1400px;
+  height: auto;
+  flex-wrap: wrap;
+}
+.booked-flight {
+  width: 350px;
+  height: 250px;
+  background-image: url(/img/hotel.png);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.booked-flight-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+.booked-flight-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+}
+.booked-flight-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: larger;
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2e2d29;
+  border-radius: 20px;
+}
+.btn {
+  background: #4e5c38;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 160px;
+  height: 45px;
+  border: none;
+  outline: none;
+  font-size: larger;
+  cursor: pointer;
+  color: white;
+}
+.cancel-flight {
+  margin-bottom: 5px;
+  background-color: #2e2d29;
+}
+.create-flight {
+  margin-top: 20px;
+  width: 250px;
+  height: 70px;
+  font-size: xx-large;
+}
+.manage-flight-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: larger;
+  margin: 5px auto;
+  width: 90%;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2e2d29;
+  border-radius: 20px;
+}
+.manage-flight-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 50%;
+}
+.edit-flight {
+  background-color: #2e2d29;
+  margin-bottom: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.delete-flight {
+  margin-bottom: 5px;
+  background-color: #a61e1e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
