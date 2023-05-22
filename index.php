@@ -8,19 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-    <nav>
-    <div class="logo">
-    <img src="img/logo.png" alt="tropical logo" />
-    </div>
-    <div class="links">
-    <a href="#"><h1>Book</h1></a>
-    <a href="#"><h1>Gallery</h1></a>
-    <a href="#"><h1>About us</h1></a>
-    <a href="#"><h1>Contact</h1></a>
-    </div>
-    </nav>
-    </header>
+<?php 
+include_once('includes/navbar.php');
+?>
     <main>
         <div class="background">
             <h1>Your journey</h1>
@@ -32,28 +22,45 @@
         </div>
         <div class="content">
             <h2>Fast and reliable</h2>
-            <span>Helped houndreds of travelers across the globe.</span>
+            <p>Helped houndreds of travelers across the globe.<p>
             <div class="comments">
-                <div><span>1</span></div>
-                <div><span>2</span></div>
-                <div><span>3</span></div>
+                <div class="comment-block">
+                    <span>“I've travelled to the Amazons before but i've never gotten such good service as with Tropical. By far one of the best travel companies"</span>
+                    <div class="comment-info">
+                        <div class="comment-name"><span>~Luke Anderson</span></div>
+                        <div class="comment-date"><span>traveled on: 20-12-2020</span></div>
+                    </div>
+                </div>
+                <div class="comment-block">
+                    <span>“I've travelled to the Amazons before but i've never gotten such good service as with Tropical. By far one of the best travel companies"</span>
+                    <div class="comment-info">
+                        <div class="comment-name"><span>~Luke Anderson</span></div>
+                        <div class="comment-date"><span>traveled on: 20-12-2020</span></div>
+                    </div>
+                </div>
+                <div class="comment-block">
+                    <span>“I've travelled to the Amazons before but i've never gotten such good service as with Tropical. By far one of the best travel companies"</span>
+                    <div class="comment-info">
+                        <div class="comment-name"><span>~Luke Anderson</span></div>
+                        <div class="comment-date"><span>traveled on: 20-12-2020</span></div>
+                    </div>
+                </div>
+                <div class="comment-block">
+                    <span>“I've travelled to the Amazons before but i've never gotten such good service as with Tropical. By far one of the best travel companies"</span>
+                    <div class="comment-info">
+                        <div class="comment-name"><span>~Luke Anderson</span></div>
+                        <div class="comment-date"><span>traveled on: 20-12-2020</span></div>
+                    </div>
+                </div>
+                
             </div>
             <div class="book-adventure">
             Book your adventure 
             </div>
         </div>
     </main>
-    <footer>
-    <div class="logo">
-    <img src="img/logo.png" alt="tropical logo" />
-    </div>
-    <div class="links">
-    <a href="#"><h1>Booked</h1></a>
-    <a href="#"><h1>Flights</h1></a>
-    <a href="#"><h1>Gallery</h1></a>
-    <a href="#"><h1>Messages</h1></a>
-    <a href="#"><h1>Sign out</h1></a>
-    </div>
-    </footer>
+<?php
+include_once('includes/footer.php');
+?>
 </body>
 </html>
