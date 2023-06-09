@@ -39,7 +39,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 40px;
   width: 100%;
   height: auto;
   font-size: xx-large;
@@ -129,14 +129,19 @@ nav {
 .booked-flight {
   width: 350px;
   height: 250px;
-  background-image: url(/img/hotel.png);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flights-flight-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 76%;
 }
 .booked-flight-top {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 50%;
+  height: 46%;
 }
 .booked-flight-bottom {
   display: flex;
@@ -221,8 +226,7 @@ nav {
   width: 750px;
   height: 700px;
   background: #fff;
-  border: 0;
-  border-top: 5px solid #69c773;
+  background-color: #1f1e1a;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -235,9 +239,84 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .modal-top {
+  margin-top: 40px;
   display: flex;
   width: 100%;
   height: 10%;
   align-items: center;
   justify-content: center;
+}
+.modal-middle {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+.modal-lower-middle {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+.modal-bottom {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.modal-bottom textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  width: 600px;
+  height: 200px;
+  background: #d9d9d9;
+}
+.modal-bottom-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+#add-flight-modal input[type="file"] {
+  visibility: hidden;
+}
+#add-flight-modal input[type="date"] {
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 35px;
+  background-color: #d9d9d9;
+  border: none;
+  outline: none;
+}
+#add-flight-modal input[type="text"] {
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 35px;
+  background-color: #d9d9d9;
+  border: none;
+  outline: none;
+}
+#add-flight-modal label,
+h1 {
+  color: white;
+}
+.modal-image {
+  padding: 12px;
+  border-radius: 10px;
+  color: black;
+  background-color: #d9d9d9;
+}
+
+#add-flight-modal .modal-image {
+  color: black;
 }
