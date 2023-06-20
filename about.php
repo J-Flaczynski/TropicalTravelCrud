@@ -12,7 +12,7 @@
 include_once('includes/navbar.php');
 ?>
     <main>
-        <div class="background">
+        <div class="background-about">
             <h1>This is our mission</h1>
             <br>
             <div class="search-bar-wrapper">

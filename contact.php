@@ -12,8 +12,8 @@
 include_once('includes/navbar.php');
 ?>
     <main>
-        <div class="background">
-            <h1>This is our mission</h1>
+        <div class="background-about">
+            <h1>Contact us</h1>
             <br>
             <div class="search-bar-wrapper">
         <div class="search-bar">
@@ -28,21 +28,20 @@ include_once('includes/navbar.php');
         </div>
         <div class="content">
             <h2>Contact us</h2>
-
                     <form action="#" class="contact-form">
                         <div class="contact-form-row">
-                            <input type="text" name="Name" placeholder="Name" />
-                            <input type="text" name="Email" placeholder="Email" />
+                            <input type="text" name="Name" placeholder="Name" class="contact-form-input"/>
+                            <input type="text" name="Email" placeholder="Email" class="contact-form-input" />
                         </div>
-                    <input type="text" name="Subject" placeholder="Subject" />
-                    <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                    <div class="contact-form-row">
-                            <input type="text" name="Name" placeholder="Name" />
-                            <input type="text" name="Email" placeholder="Email" />
+                        <div class="contact-form-subject">                            
+                            <input type="text" name="Subject" placeholder="Subject" class="contact-form-input" />
+                        </div>
+                            <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                        <div class="contact-form-row">
+                            <input type="submit" name="Name" value="Submit" class="submit-button"/>
+                            <input type="text" name="Email" placeholder="Attach file" class="contact-form-input" />
                         </div>
                    </form>
-
-                
         </div>
     </main>
 <?php
