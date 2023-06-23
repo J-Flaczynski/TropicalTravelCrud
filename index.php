@@ -43,7 +43,7 @@ include_once('./includes/connection.php');
                     echo '<div class="comment-text">' . $row['Review'] . '</div>'; 
                     echo('<div class="comment-info">');
                         echo '<div class="comment-name">' ."~". $row['ReviewID'] . '</div>';
-                        echo '<div class="comment-date">' ."Traveled on ". $row['UserID'] . '</div>';
+                        echo '<div class="comment-date">' ."Traveled by ". $row['Username'] . '</div>';
                     echo('</div>');
                 echo('</div>');
                 }

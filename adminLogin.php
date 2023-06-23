@@ -14,7 +14,7 @@
     <main class="booked-flights-container">
         <div class="login-form">
             <h1>Login</h1>
-            <form action="php/validate.php" method="POST">
+            <form action="php/adminValidate.php" method="POST">
                 <input name="Username" type="text" placeholder="Username"><br>
                 <br>
                 <br>

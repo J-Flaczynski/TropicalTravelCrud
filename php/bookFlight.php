@@ -6,5 +6,5 @@
     $stmt->bindParam(':userID',$_POST['userID']);
     $stmt->bindParam(':username', $_POST['username']);
     $stmt -> execute();
-    header("Location: ../index.php");
+    header("Location: ../book.php");
 ?>

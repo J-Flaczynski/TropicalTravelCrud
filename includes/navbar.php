@@ -9,7 +9,7 @@
     <a href="gallery.php"><h1>Gallery</h1></a>
     <a href="about.php"><h1>About us</h1></a>
     <a href="contact.php"><h1>Contact</h1></a>
-    <a href=""><h1>Login</h1></a>
+    <a href="login.php"><h1>Login</h1></a>
     </div>
     </nav>
     </header>

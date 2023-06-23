@@ -13,15 +13,18 @@
     <header>
     <main class="booked-flights-container">
         <div class="login-form">
-            <h1>Login</h1>
-            <form action="php/validate.php" method="POST">
-                <input name="Username" type="text" placeholder="Username"><br>
+            <h1>Register</h1>
+            <form action="php/register.php" method="POST">
+            <input name="email" type="text" placeholder="Email"><br>
                 <br>
                 <br>
-                <input name="Password" type="password" placeholder="password"><br>
+                <input name="username" type="text" placeholder="Username"><br>
                 <br>
-                <button type="submit">Sign in</button>
-                <a href="register.php"><p1>Register</p1></a>
+                <br>
+                <input name="password" type="password" placeholder="password"><br>
+                <br>
+                <button type="submit">Register</button>
+                <a href="login.php"><p1>Login</p1></a>
             </form>
         </div>
     </main>

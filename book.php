@@ -35,16 +35,18 @@ include_once('includes/navbar.php');
             <div class="book-container">
                 <?php
 
-                    $sql = 'SELECT * FROM flights';
+$sql = 'SELECT flights.*, users.* FROM flights INNER JOIN users';
                     foreach ($conn->query($sql) as $row) {
                     echo '<div class="booked-flight" style="background-position: center center; background-image: url(' ."img/" .$row['Image'] . ')">';
                     echo('<div class="flights-flight-top">');
                     echo '<div class="manage-flight-info">' . $row['Price'] . '</div>';
                     echo '<div class="manage-flight-info">' . $row['Destination'] . '</div>';
                     echo('</div>');
-                    echo '<form action="#" method="post">';
+                    echo '<form action="php/bookFlight.php" method="post">';
                     echo '<input type="hidden" name="flightID" value="' . $row['FlightID'] . '">';
-                    echo '<button type="submit" class="more-info-btn">More info</button>';
+                    echo '<input type="hidden" name="userID" value="' . $row['UserID'] . '">';
+                    echo '<input type="hidden" name="username" value="' . $row['Username'] . '">';
+                    echo '<button type="submit" class="more-info-btn">Book flight</button>';
                     echo '</form>';
                     echo('</div>');
                     }
