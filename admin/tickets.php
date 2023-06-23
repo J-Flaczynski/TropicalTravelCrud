@@ -34,9 +34,8 @@
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     foreach ($rows as $row) {
-      echo '<div class="ticket-outline" style="outline: 2px solid black;">';
+      echo '<div class="ticket-outline" style="outline: 2px solid black; margin-top: 15%;">';
         echo '<div class="modal-top">';
-        echo '<h1>Edit flight</h1>';
         echo '</div>';
         echo '<div class="modal-middle">';
         echo '<div class="date-container">';

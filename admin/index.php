@@ -24,7 +24,7 @@
 ?>
     </header>
     <div class="name-container">
-      <h1>Welcome USERNAME</h1>
+      <h1>Welcome</h1>
     </div>
     <main class="home-navigation">
       <div class="home-navigation-container">
