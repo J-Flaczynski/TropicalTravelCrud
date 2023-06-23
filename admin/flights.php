@@ -1,5 +1,13 @@
 <?php include_once('../includes/connection.php');
 ?>
+<?php
+    session_start();
+
+    if(!isset($_SESSION["name"])){
+        header("Location: ../login.php");
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,18 +19,8 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <img src="../img/DALL_E_2023-05-09_09.57 1.png" alt="tropical logo" />
-        </div>
-        <div class="links">
-          <a href="#"><h1>Booked</h1></a>
-          <a href="#"><h1>Flights</h1></a>
-          <a href="#"><h1>Gallery</h1></a>
-          <a href="#"><h1>Messages</h1></a>
-          <a href="#"><h1>Sign out</h1></a>
-        </div>
-      </nav>
+<?php include_once('../includes/adminNav.php');
+?>
     </header>
     <div class="name-container">
       <h1>Manage flights</h1>
