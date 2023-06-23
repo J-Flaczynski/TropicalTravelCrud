@@ -37,9 +37,8 @@ include_once('includes/navbar.php');
                             <input type="text" name="Subject" placeholder="Subject" class="contact-form-input" />
                         </div>
                             <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                        <div class="contact-form-row">
+                        <div class="contact-form-subject">
                             <input type="submit" name="Name" value="Submit" class="submit-button"/>
-                            <input type="text" name="Email" placeholder="Attach file" class="contact-form-input" />
                         </div>
                    </form>
         </div>

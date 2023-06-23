@@ -8,7 +8,7 @@ a {
 }
 
 body {
-  background-color: #fff;
+  background-color: #1f1e1a;
 }
 
 nav {
@@ -144,9 +144,36 @@ footer {
   justify-content: center;
 }
 
+.background-book {
+  height: 80vh;
+
+  background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../img/background-book.png);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ),
+    url(../img/background-book.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .background h1,
 .background-gallery h1,
-.background-about h1 {
+.background-about h1,
+.background-book h1 {
   font-size: 50px;
   color: #fff;
 }
@@ -246,7 +273,10 @@ footer {
   justify-content: space-between;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   white-space: break-spaces;
+  overflow: hidden;
+  height: 80%;
 }
 .about-us-text {
   font-size: larger;
@@ -340,6 +370,7 @@ footer {
   border: none;
   outline: none;
   height: 45px;
+  cursor: pointer;
 }
 
 .btn {
@@ -353,94 +384,6 @@ footer {
   font-size: larger;
   cursor: pointer;
   color: white;
-}
-@media screen and (max-width: 768px) {
-  .comments {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  nav {
-    width: 100%;
-    height: 100%;
-    background-color: #2e2d29;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: unset;
-  }
-
-  footer {
-    width: 100%;
-    height: 100%;
-    background-color: #2e2d29;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .logo {
-    height: inherit;
-    width: auto;
-  }
-
-  .links,
-  .links-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: inherit;
-    width: 100%;
-    margin: 0;
-  }
-
-  .links a,
-  .links-footer a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .logo img {
-    height: 100%;
-    width: 125px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-
-  .comments {
-    width: 100%;
-    margin-top: 20%;
-    margin-bottom: 20%;
-  }
-
-  .book-adventure {
-    width: 100%;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form-row {
-    flex-direction: column;
-    gap: 25px;
-    width: 100%;
-  }
-
-  .contact-form-subject,
-  .contact-form-subject input {
-    width: 100%;
-  }
-
-  .contact-form-input {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  .submit-button {
-    width: 100%;
-  }
 }
 
 .booked-flights-container {
@@ -459,8 +402,10 @@ footer {
 }
 .flights-flight-top {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  gap: 100px;
   height: 58%;
 }
 .booked-flight-top {
@@ -522,5 +467,149 @@ footer {
   height: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #2e2d29;
-  border-radius: 20px;
+  border-radius: 15px;
+}
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 1480px;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 750px;
+}
+
+.more-info-btn {
+  margin-top: 10%;
+  font-size: large;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  background: #2e2d29;
+  border-radius: 15px;
+  border: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    width: 100%;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 725px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  nav {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2d29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: unset;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2d29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: inherit;
+    width: auto;
+  }
+
+  .links,
+  .links-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+    margin: 0;
+  }
+
+  .links a,
+  .links-footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo img {
+    height: 100%;
+    width: 125px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .comments {
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .book-adventure {
+    width: 100%;
+  }
+
+  .contact-form-row {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .contact-form-subject,
+  .contact-form-subject input {
+    width: 100%;
+  }
+
+  .contact-form-input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  .book-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .booked-flight {
+    width: 320px;
+  }
+
+  .about-us-text {
+    margin-inline: 10%;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+  }
 }
